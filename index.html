@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Login & Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <canvas id="ai-particles"></canvas>
+    <div class="auth-wrapper">
+        <div class="background-shape"></div>
+        <div class="secondary-shape"></div>
+        <div class="ai-glow"></div>
+        <div class="credentials-panel signin">
+            <h2 class="slide-element">
+                <span class="ai-text-effect">Login</span>
+                <i class="fa-solid fa-robot ai-icon"></i>
+            </h2>
+            <form action="#" id="loginForm">
+                <div class="field-wrapper slide-element">
+                    <input type="text" id="loginUsername" required autocomplete="username">
+                    <label for="loginUsername">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                    <div class="ai-suggestions" id="loginSuggestions"></div>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="password" id="loginPassword" required autocomplete="current-password">
+                    <label for="loginPassword">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <i class="fa-solid fa-eye password-toggle" id="loginPasswordToggle"></i>
+                    <div class="password-strength" id="loginPasswordStrength"></div>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <button class="submit-button ai-button" type="submit">
+                        <span class="button-text">Login</span>
+                        <i class="fa-solid fa-sparkles ai-sparkle"></i>
+                    </button>
+                </div>
+
+                <div class="switch-link slide-element">
+                    <p>Don't have an account? <br> <a href="#" class="register-trigger">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-section signin">
+            <h2 class="slide-element">
+                <span class="ai-text-effect">WELCOME BACK!</span>
+            </h2>
+            <p class="slide-element ai-subtitle">Your AI-powered journey continues...</p>
+        </div>
+
+        <div class="credentials-panel signup">
+            <h2 class="slide-element">
+                <span class="ai-text-effect">Register</span>
+                <i class="fa-solid fa-brain ai-icon"></i>
+            </h2>
+            <form action="#" id="signupForm">
+                <div class="field-wrapper slide-element">
+                    <input type="text" id="signupUsername" required autocomplete="username">
+                    <label for="signupUsername">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                    <div class="ai-suggestions" id="signupSuggestions"></div>
+                    <div class="char-counter" id="usernameCounter">0/20</div>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="email" id="signupEmail" required autocomplete="email">
+                    <label for="signupEmail">Email</label>
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="ai-validation" id="emailValidation"></div>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="password" id="signupPassword" required autocomplete="new-password">
+                    <label for="signupPassword">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <i class="fa-solid fa-eye password-toggle" id="signupPasswordToggle"></i>
+                    <div class="password-strength" id="signupPasswordStrength">
+                        <div class="strength-bar">
+                            <div class="strength-fill" id="strengthFill"></div>
+                        </div>
+                        <div class="strength-text" id="strengthText">Password strength</div>
+                        <div class="strength-tips" id="strengthTips"></div>
+                    </div>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <button class="submit-button ai-button" type="submit">
+                        <span class="button-text">Register</span>
+                        <i class="fa-solid fa-sparkles ai-sparkle"></i>
+                    </button>
+                </div>
+
+                <div class="switch-link slide-element">
+                    <p>Already have an account? <br> <a href="#" class="login-trigger">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-section signup">
+            <h2 class="slide-element">
+                <span class="ai-text-effect">WELCOME!</span>
+            </h2>
+            <p class="slide-element ai-subtitle">Join the AI revolution...</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Made with <span class="ai-heart">❤️</span> by <a href="#" target="_blank">Code by vishal</a></p>
+        <p class="ai-powered">Powered by AI Intelligence</p>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>
